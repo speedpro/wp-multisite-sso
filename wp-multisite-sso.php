@@ -62,7 +62,8 @@ class WP_MultiSite_SSO {
 			if ( !isset( $site['blog_id'] ) || !isset( $site['domain'] ) )
 				continue;
 
-			$network_sites[$site['blog_id']] = esc_url( $site['domain'] );
+			$site_url = get_site_url($site['blog_id']);
+			$network_sites[$site['domain']] = esc_url( $site_url );
 		}
 
 		// if domain mapping exists, attempt to map the sites to the mapped domain
