@@ -6,6 +6,7 @@
   Description: Single sign on for a multisite network. Users are authenticated across all sites within the network.
   Author: Voce Platforms, Sean McCafferty
   Author URI: http://voceconnect.com/
+  GitHub Plugin URI: speedpro/wp-multisite-sso
  */
 
 /*
